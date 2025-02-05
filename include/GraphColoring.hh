@@ -1,14 +1,14 @@
 #pragma once
 
 #include <algorithm>
-#include <iostream>
-#include <limits>
-#include <random>
-#include <vector>
-#include <unordered_set>
 #include <filesystem>
 #include <fstream>
+#include <iostream>
+#include <limits>
 #include <list>
+#include <random>
+#include <unordered_set>
+#include <vector>
 
 #include "Graph.hh"
 
@@ -24,7 +24,7 @@ template <typename Float> struct Vertex final {
   using SizeType = size_t;
   using FloatType = Float;
 
-  static constexpr FloatType ParamA = FloatType{0.1};
+  static constexpr FloatType ParamA = FloatType{0.5};
   static constexpr FloatType ParamB = FloatType{0.1};
   static constexpr FloatType ParamE = FloatType{0.1};
 
@@ -55,13 +55,12 @@ template <typename Float> struct Vertex final {
     SelectedColorIdx = D(Generator);
   }
 
-  bool checkAdjColorChoice() const {
+  bool needPenalizeAdjColorChoice() const {
     auto EIds = G->adjEdgeIds(Id);
     return std::any_of(EIds.begin(), EIds.end(), [&](auto &&EId) {
-      auto N1Id = G->getEdgeNode1Id(EId);
-      auto N2Id = G->getEdgeNode2Id(EId);
-      auto NId = Id == N1Id ? N2Id : N1Id;
-      return NId == Id;
+      auto NId = G->getEdgeOtherNodeId(EId, Id);
+      const auto &Attrs = G->getNodeAttrs(NId);
+      return Attrs.SelectedColorIdx == SelectedColorIdx;
     });
   }
 
@@ -80,20 +79,19 @@ template <typename Float> struct Vertex final {
   }
 
   void computeColorDegree() {
-		auto Colors = std::unordered_set<SizeType>{};
-		auto EIds = G->adjEdgeIds(Id);
-		for (auto && EId:EIds) {
-			auto N1Id = G->getEdgeNode1Id(EId);
-      auto N2Id = G->getEdgeNode2Id(EId);
-      auto NId = Id == N1Id ? N2Id : N1Id;
-			auto& Attrs = G->getNodeAttrs(NId);
-			auto Color = Attrs.SelectedColorIdx;
-			Colors.emplace(Color);
-		}
-		ColorDegree = Colors.size();
-	}
+    auto Colors = std::unordered_set<SizeType>{};
+    Colors.emplace(SelectedColorIdx);
+    auto EIds = G->adjEdgeIds(Id);
+    for (auto &&EId : EIds) {
+      auto NId = G->getEdgeOtherNodeId(EId, Id);
+      const auto &Attrs = G->getNodeAttrs(NId);
+      auto Color = Attrs.SelectedColorIdx;
+      Colors.emplace(Color);
+    }
+    ColorDegree = Colors.size();
+  }
 
-  bool checkDynamicThreshold() { return ColorDegree <= DynamicThreshold; }
+  bool needRewardDynamicThreshold() { return ColorDegree <= DynamicThreshold; }
 
   void reward() {
     auto NewProbabilities = Probabilities;
@@ -112,20 +110,18 @@ template <typename Float> struct Vertex final {
   bool checkAdjColorReward() const {
     auto EIds = G->adjEdgeIds(Id);
     return std::all_of(EIds.begin(), EIds.end(), [&](auto &&EId) {
-      auto N1Id = G->getEdgeNode1Id(EId);
-      auto N2Id = G->getEdgeNode2Id(EId);
-      auto NId = Id == N1Id ? N2Id : N1Id;
-			auto& Attrs = G->getNodeAttrs(NId);
+      auto NId = G->getEdgeOtherNodeId(EId, Id);
+      const auto &Attrs = G->getNodeAttrs(NId);
       return Attrs.Rewarded;
     });
-	}
+  }
 
   void updateDynamicThreshold() { DynamicThreshold = ColorDegree; }
 
-  bool checkSelectedColorProbability() const {
-		auto P = Probabilities[SelectedColorIdx];
-		return P <= Threshold;
-	}
+  bool needHaltSelectedColorProbability() const {
+    auto P = Probabilities[SelectedColorIdx];
+    return P > Threshold;
+  }
 
   Vertex(const GraphTy &G)
       : G(&G), Id(G.invalidNodeId()), ColorDegree(0), Probabilities(),
@@ -133,25 +129,26 @@ template <typename Float> struct Vertex final {
         Rewarded(false) {}
 };
 
-template<typename Float>
+template <typename Float>
 std::ostream &operator<<(std::ostream &OS, const Vertex<Float> &V) {
-	auto dumpProbabilities = [](std::ostream &OS, const std::vector<Float>& Probabilities) {
-		auto Separator = "";
+  auto dumpProbabilities = [](std::ostream &OS,
+                              const std::vector<Float> &Probabilities) {
+    auto Separator = "";
     OS << "Probabilities ";
-		for (auto P : Probabilities) {
-			OS << Separator << P;
-			Separator = ", ";
-		}
+    for (auto P : Probabilities) {
+      OS << Separator << P;
+      Separator = ", ";
+    }
     OS << "|";
-	};
+  };
   OS << std::setprecision(2);
-	OS << "Id " << V.Id << "|";
-	OS << "Color Degree " << V.ColorDegree << "|";
-	dumpProbabilities(OS, V.Probabilities);
-	OS << "Threshold " << V.Threshold << "|";
-	OS << "Dynamic threshold " << V.DynamicThreshold << "|";
-	OS << "Selected Color " << V.SelectedColorIdx << "|";
-	OS << "Rewarded " << V.Rewarded;
+  OS << "Id " << V.Id << "|";
+  OS << "Color Degree " << V.ColorDegree << "|";
+  dumpProbabilities(OS, V.Probabilities);
+  OS << "Threshold " << V.Threshold << "|";
+  OS << "Dynamic threshold " << V.DynamicThreshold << "|";
+  OS << "Selected Color " << V.SelectedColorIdx << "|";
+  OS << "Rewarded " << V.Rewarded;
   return OS;
 }
 
@@ -162,7 +159,7 @@ public:
 
 private:
   struct VertexAttrs {
-    VertexTy* V = nullptr;
+    VertexTy *V = nullptr;
     bool NeedCheckAdjColors = false;
   };
 
@@ -170,51 +167,61 @@ public:
   void solve(GraphTy &G) {
     auto Verteces = std::list<VertexAttrs>{};
     auto NIds = G.nodeIds();
-    std::transform(NIds.begin(), NIds.end(), std::back_inserter(Verteces), [&](auto &&NId){
-      auto& Attrs = G.getNodeAttrs(NId);
-      Attrs.initialize(NId);
-      return VertexAttrs{&Attrs, false};
-    });
-		auto filepath = RepoPath / "res" / "dump.dot";
-		auto os = std::ofstream{filepath};
-		G.dotPrint(os);
+    std::transform(NIds.begin(), NIds.end(), std::back_inserter(Verteces),
+                   [&](auto &&NId) {
+                     auto &Attrs = G.getNodeAttrs(NId);
+                     Attrs.initialize(NId);
+                     return VertexAttrs{&Attrs, false};
+                   });
+    fs::remove_all(RepoPath / "res");
+    fs::create_directory(RepoPath / "res");
     unsigned StageNumber = 0;
+    unsigned MaxStageNumber = 1000;
     for (;;) {
-      if (Verteces.empty()) {
+      if (Verteces.empty() || StageNumber == MaxStageNumber) {
         break;
       }
-      for (auto& [V, Need] : Verteces) {
+      for (auto &[V, Need] : Verteces) {
         V->chooseColor();
       }
-      for (auto& [V, Need] : Verteces) {
+      std::cout << "Vertixes Num " << Verteces.size() << std::endl;
+      auto filepath =
+          RepoPath / "res" / ("dump" + std::to_string(StageNumber) + ".dot");
+      auto os = std::ofstream{filepath};
+      G.dotPrint(os);
+      for (auto &[V, Need] : Verteces) {
         Need = false;
-        if (V->checkAdjColorChoice()) {
+        if (V->needPenalizeAdjColorChoice()) {
+          std::cout << "penalized1 at stage " << StageNumber << std::endl;
           V->penalize();
         } else {
           V->computeColorDegree();
-          if (V->checkDynamicThreshold()) {
+          if (V->needRewardDynamicThreshold()) {
+            std::cout << "rewarded at stage " << StageNumber << std::endl;
             V->reward();
             Need = true;
           } else {
+            std::cout << "penalized2 at stage " << StageNumber << std::endl;
             V->penalize();
           }
         }
       }
-      for (auto& [V, Need] : Verteces) {
+      for (auto &[V, Need] : Verteces) {
         if (Need) {
-          if (V->checkAdjColorReward()) {
+          if (!V->checkAdjColorReward()) {
             V->updateDynamicThreshold();
           }
         }
       }
-      auto filepath = RepoPath / "res" / ("dump" + std::to_string(StageNumber) + ".dot");
-      auto os = std::ofstream{filepath};
-      G.dotPrint(os);
       StageNumber++;
-      Verteces.erase(std::remove_if(Verteces.begin(), Verteces.end(), [](auto&& VA){
-        return VA.V->checkSelectedColorProbability();
-      }));
+      Verteces.remove_if(
+          [](auto &&VA) { return VA.V->needHaltSelectedColorProbability(); });
     }
+    std::cout << "Vertixes Num " << Verteces.size() << std::endl;
+    auto filepath =
+        RepoPath / "res" / ("dump" + std::to_string(StageNumber) + ".dot");
+    auto os = std::ofstream{filepath};
+    G.dotPrint(os);
   }
 };
 

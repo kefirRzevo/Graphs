@@ -14,8 +14,8 @@ class Graph final
   using BaseGraph = IGraph<NodeAttrs, EdgeAttrs, Graph<NodeAttrs, EdgeAttrs>>;
 
 public:
-  using typename BaseGraph::NodeId;
   using typename BaseGraph::EdgeId;
+  using typename BaseGraph::NodeId;
 
 private:
   class NodeEntry {
@@ -309,7 +309,9 @@ public:
 
   EdgeIdSet edgeIds() const { return EdgeIdSet(*this); }
 
-  AdjEdgeIdSet adjEdgeIds(NodeId NId) const { return AdjEdgeIdSet(getNode(NId)); }
+  AdjEdgeIdSet adjEdgeIds(NodeId NId) const {
+    return AdjEdgeIdSet(getNode(NId));
+  }
 
   unsigned getNumNodes() const { return NodeIdSet(*this).size(); }
 
@@ -331,15 +333,16 @@ public:
 
   NodeId getEdgeNode2Id(EdgeId EId) const { return getEdge(EId).getN2Id(); }
 
-  NodeId getEdgeOtherNodeId(EdgeId EId, NodeId NId) {
-    EdgeEntry &E = getEdge(EId);
+  NodeId getEdgeOtherNodeId(EdgeId EId, NodeId NId) const {
+    const EdgeEntry &E = getEdge(EId);
     if (E.getN1Id() == NId) {
       return E.getN2Id();
     }
+    assert(E.getN2Id() == NId);
     return E.getN1Id();
   }
 
-  EdgeId findEdge(NodeId N1Id, NodeId N2Id) {
+  EdgeId findEdge(NodeId N1Id, NodeId N2Id) const {
     for (auto &&AEId : adjEdgeIds(N1Id)) {
       if ((getEdgeNode1Id(AEId) == N2Id) || (getEdgeNode2Id(AEId) == N2Id)) {
         return AEId;

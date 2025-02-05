@@ -1,7 +1,7 @@
 #pragma once
 
-#include <limits>
 #include <iostream>
+#include <limits>
 
 namespace graphs {
 
@@ -104,7 +104,7 @@ public:
   /// @param EId Edge id.
   /// @param NId Node id for the "given" node.
   /// @return The iterator for the "other" node connected to this edge.
-  NodeId getEdgeOtherNodeId(EdgeId EId, NodeId NId) {
+  NodeId getEdgeOtherNodeId(EdgeId EId, NodeId NId) const {
     return impl()->getEdgeOtherNodeId(EId, NId);
   }
 
@@ -113,7 +113,7 @@ public:
   /// @param N2Id Second node id.
   /// @return An id for edge (N1Id, N2Id) if such an edge exists,
   ///         otherwise returns an invalid edge id.
-  EdgeId findEdge(NodeId N1Id, NodeId N2Id) {
+  EdgeId findEdge(NodeId N1Id, NodeId N2Id) const {
     return impl()->findEdge(N1Id, N2Id);
   }
 
