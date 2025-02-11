@@ -1,9 +1,8 @@
 #pragma once
 
+#include "IGraph.hpp"
 #include <cassert>
 #include <vector>
-
-#include "IGraph.hh"
 
 namespace graphs {
 
@@ -14,6 +13,8 @@ class Graph final
   using BaseGraph = IGraph<NodeAttrs, EdgeAttrs, Graph<NodeAttrs, EdgeAttrs>>;
 
 public:
+  using BaseGraph::invalidEdgeId;
+  using BaseGraph::invalidNodeId;
   using typename BaseGraph::EdgeId;
   using typename BaseGraph::NodeId;
 
@@ -45,6 +46,8 @@ private:
     }
 
     const AdjEdgeList &getAdjEdgeIds() const { return AdjEdgeIds; }
+    AdjEdgeItr adjEdgesBegin() const { return AdjEdgeIds.begin(); }
+    AdjEdgeItr adjEdgesEnd() const { return AdjEdgeIds.end(); }
 
     NodeAttrs Attrs;
 
@@ -364,7 +367,8 @@ public:
 
   void removeEdge(EdgeId EId) {
     EdgeEntry &E = getEdge(EId);
-    E.disconnect();
+    E.disconnectFrom(*this, E.getN1Id());
+    E.disconnectFrom(*this, E.getN2Id());
     FreeEdgeIds.push_back(EId);
   }
 
@@ -373,22 +377,6 @@ public:
     FreeNodeIds.clear();
     Edges.clear();
     FreeEdgeIds.clear();
-  }
-
-  void dotPrint(std::ostream &OS) const {
-    OS << "graph {\n";
-    OS << "\trankdir=LR;\n";
-    OS << "\tnode[shape=record, style=filled, fontcolor=black];\n";
-    for (auto Id : nodeIds()) {
-      const auto &Entry = getNode(Id);
-      OS << "\tnode_" << Id << "[label = \"" << Entry.Attrs << "\"];\n";
-    }
-    for (auto Id : edgeIds()) {
-      const auto &Entry = getEdge(Id);
-      OS << "\tnode_" << Entry.getN1Id() << " -- node_";
-      OS << Entry.getN2Id() << "[label = \"" << Entry.Attrs << "\"];\n";
-    }
-    OS << "}" << std::endl;
   }
 };
 

@@ -1,21 +1,18 @@
 #pragma once
 
-#include <iostream>
+#include <cstddef>
 #include <limits>
+#include <utility>
 
 namespace graphs {
 
-struct DefaultNodeAttrs {};
+struct DefaultNodeAttrs {
+  auto operator<=>(const DefaultNodeAttrs &) const = default;
+};
 
-std::ostream &operator<<(std::ostream &OS, const DefaultNodeAttrs &) {
-  return OS;
-}
-
-struct DefaultEdgeAttrs {};
-
-std::ostream &operator<<(std::ostream &OS, const DefaultEdgeAttrs &) {
-  return OS;
-}
+struct DefaultEdgeAttrs {
+  auto operator<=>(const DefaultEdgeAttrs &) const = default;
+};
 
 template <typename NodeAttrs, typename EdgeAttrs, typename Impl> class IGraph {
   Impl *impl() { return static_cast<Impl *>(this); }
@@ -127,8 +124,6 @@ public:
 
   /// Remove all nodes and edges from the graph.
   void clear() { impl()->clear(); }
-
-  void dotPrint(std::ostream &OS) const { impl()->dotPrint(OS); }
 };
 
 } // namespace graphs
