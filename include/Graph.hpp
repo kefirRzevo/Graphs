@@ -13,6 +13,8 @@ class Graph final
   using BaseGraph = IGraph<NodeAttrs, EdgeAttrs, Graph<NodeAttrs, EdgeAttrs>>;
 
 public:
+  using NodeAttrsTy = NodeAttrs;
+  using EdgeAttrsTy = EdgeAttrs;
   using BaseGraph::invalidEdgeId;
   using BaseGraph::invalidNodeId;
   using typename BaseGraph::EdgeId;
@@ -246,6 +248,7 @@ public:
     bool empty() const { return G.Nodes.empty(); }
 
     typename NodeVector::size_type size() const {
+      assert(G.Nodes.size() >= G.FreeNodeIds.size());
       return G.Nodes.size() - G.FreeNodeIds.size();
     }
 
@@ -263,6 +266,7 @@ public:
     bool empty() const { return G.Edges.empty(); }
 
     typename NodeVector::size_type size() const {
+      assert(G.Edges.size() >= G.FreeEdgeIds.size());
       return G.Edges.size() - G.FreeEdgeIds.size();
     }
 

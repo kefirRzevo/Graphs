@@ -12,7 +12,11 @@ int main(int argc, const char *argv[]) {
     return 0;
   }
   auto Cfg = CfgOrOpt.value();
-  std::ifstream ifs{Cfg.GraphInput};
+  auto GraphInput = Cfg.GraphInput;
+  if (GraphInput.empty()) {
+    GraphInput = RepoPath / "graphs" / "graph.txt";
+  }
+  std::ifstream ifs{GraphInput};
   auto G = graphs::readGraph<GraphTy>(ifs);
   graphs::clavca::Solver S{G};
   if (Cfg.ParamA.has_value()) {
@@ -28,7 +32,7 @@ int main(int argc, const char *argv[]) {
     S.setSeed(Cfg.Seed.value());
   }
   auto ResDir = RepoPath / "res";
-  graphs::clavca::SimpleDumper Dumper{std::cout, ResDir};
+  graphs::clavca::ComplicatedDumper Dumper{std::cout, ResDir};
   S.solve(Dumper);
   return 0;
 }

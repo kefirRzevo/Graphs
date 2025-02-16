@@ -10,11 +10,16 @@ add_compile_options (-O3 -Werror -Wall)
 set (ClavcaSources src/ClavcaTest.cpp src/clavca/Options.cpp)
 add_executable (Clavca ${ClavcaSources})
 target_include_directories (Clavca PRIVATE include)
-target_link_libraries(Clavca ${Boost_PROGRAM_OPTIONS_LIBRARY})
+target_link_libraries (Clavca ${Boost_PROGRAM_OPTIONS_LIBRARY})
+
+set (FicavcaSources src/FicavcaTest.cpp src/ficavca/Options.cpp)
+add_executable (Ficavca ${FicavcaSources})
+target_include_directories (Ficavca PRIVATE include)
+target_link_libraries (Ficavca ${Boost_PROGRAM_OPTIONS_LIBRARY})
 
 enable_testing ()
 
 set (GraphTestSources tests/GraphTest.cpp)
-add_executable(GraphTest ${GraphTestSources})
+add_executable (GraphTest ${GraphTestSources})
 target_include_directories (GraphTest PRIVATE include ${GTEST_INCLUDE_DIRS})
 target_link_libraries (GraphTest ${GTEST_LIBRARIES} ${GTEST_MAIN_LIBRARIES})

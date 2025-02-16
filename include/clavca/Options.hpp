@@ -7,7 +7,7 @@ namespace graphs {
 
 namespace clavca {
 
-struct Config {
+struct Config final {
   std::optional<double> ParamA;
   std::optional<double> ParamB;
   std::optional<double> ParamE;

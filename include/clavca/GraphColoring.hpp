@@ -19,21 +19,14 @@ namespace graphs {
 
 namespace clavca {
 
-struct NoDumper {
-  void dumpDbgMsg(std::string_view Msg) {}
-
-  void dumpMsg(std::string_view Msg) {}
-
-  template<typename GraphTy>
-  void dumpGraphByStage(std::string_view Path, const GraphTy &G) {}
-};
-
 template <typename FloatTy> class Solver final {
+public:
   using VertexTy = Vertex<FloatTy>;
   using GraphTy = Graph<VertexTy>;
   using SizeType = typename VertexTy::SizeType;
   using NodeId = typename GraphTy::NodeId;
 
+private:
   FloatTy ParamA = FloatTy{1.0};
   FloatTy ParamB = FloatTy{0.0};
   FloatTy ParamE = FloatTy{0.2};

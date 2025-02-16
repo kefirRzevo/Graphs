@@ -1,68 +1,53 @@
 #pragma once
 
-#include "Graph.hpp"
 #include "Dumper.hpp"
-#include "clavca/Vertex.hpp"
+#include "Graph.hpp"
+#include "ficavca/Vertex.hpp"
+#include <filesystem>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
 #include <string>
-#include <filesystem>
 #include <string_view>
 
 namespace fs = std::filesystem;
 
 namespace graphs {
 
-namespace clavca {
+namespace ficavca {
 
 struct ComplicatedDumper {
-  std::ostream& OS;
+  std::ostream &OS;
   fs::path Dir;
 
-  ComplicatedDumper(std::ostream& O, fs::path D): OS(O), Dir(D) {
+  ComplicatedDumper(std::ostream &O, fs::path D) : OS(O), Dir(D) {
     fs::remove_all(D);
     fs::create_directory(D);
   }
 
-  template<typename FloatTy>
-  void complicatedVertexDump(std::ostream &OS, const Vertex<FloatTy> &V) {
-    auto dumpProbabilities = [](std::ostream &OS,
-                                const std::vector<FloatTy> &Probabilities) {
-      auto Separator = "";
-      OS << "Probabilities ";
-      for (auto P : Probabilities) {
-        OS << Separator << P;
-        Separator = ", ";
-      }
-      OS << "|";
-    };
+  void complicatedVertexDump(std::ostream &OS, const Vertex &V) {
     OS << std::setprecision(2);
-    OS << "Color Degree " << V.ColorDegree << "|";
-    dumpProbabilities(OS, V.Probabilities);
-    OS << "Threshold " << V.Threshold << "|";
-    OS << "Dynamic threshold " << V.DynamicThreshold << "|";
-    OS << "Selected Color " << V.SelectedColorIdx << "|";
-    OS << "Rewarded " << V.Rewarded;
+    OS << "Colored " << V.Colored << "|";
+    OS << "Color " << V.Color << "|";
+    OS << "Purity " << V.PurityValue << "|";
+    OS << "VoteWeight " << V.VoteWeight << "|";
   }
 
   void dumpDbgMsg(std::string_view Msg) {}
 
-  void dumpMsg(std::string_view Msg) {
-    OS << Msg;
-  }
+  void dumpMsg(std::string_view Msg) { OS << Msg; }
 
-  template<typename GraphTy>
+  template <typename GraphTy>
   void dumpGraphByStage(std::string_view Path, const GraphTy &G) {
     auto OS = std::ofstream{(Dir / Path).c_str()};
     OS << "graph {\n";
     OS << "\trankdir=LR;\n";
     OS << "\tnode[shape=record, style=filled, fontcolor=black];\n";
-    for (auto Id : G.nodeIds()) {
-      const auto &V = G.getNodeAttrs(Id);
-      OS << "\tnode_" << Id << "[label = \"Id " << Id << "|";
+    for (auto NId : G.nodeIds()) {
+      const auto &V = G.getNodeAttrs(NId);
+      OS << "\tnode_" << NId << "[label = \"Id " << NId << "|";
       complicatedVertexDump(OS, V);
-      OS << "\"];\n";
+      OS << "Neighbors " << G.adjEdgeIds(NId).size() << "\"];\n";
     }
     for (auto Id : G.edgeIds()) {
       auto V1 = G.getEdgeNode1Id(Id);
@@ -74,29 +59,26 @@ struct ComplicatedDumper {
 };
 
 struct SimpleDumper {
-  std::ostream& OS;
+  std::ostream &OS;
   fs::path Dir;
 
-  SimpleDumper(std::ostream& O, fs::path D): OS(O), Dir(D) {
+  SimpleDumper(std::ostream &O, fs::path D) : OS(O), Dir(D) {
     fs::remove_all(D);
     fs::create_directory(D);
   }
 
   void dumpDbgMsg(std::string_view Msg) {}
 
-  void dumpMsg(std::string_view Msg) {
-    OS << Msg;
-  }
+  void dumpMsg(std::string_view Msg) { OS << Msg; }
 
-  template<typename FloatTy>
-  void simpleVertexDump(std::ostream &OS, const Vertex<FloatTy> &V) {
-    auto AsString = std::to_string(V.SelectedColorIdx);
+  void simpleVertexDump(std::ostream &OS, const Vertex &V) {
+    auto AsString = std::to_string(V.Color);
     auto Hash = std::hash<std::string>{}(AsString);
     auto FitHash = Hash & 0xFFFFFF;
     OS << "\"#" << std::hex << FitHash << "\"";
   }
 
-  template<typename GraphTy>
+  template <typename GraphTy>
   void dumpGraphByStage(std::string_view Path, const GraphTy &G) {
     auto OS = std::ofstream{(Dir / Path).c_str()};
     OS << "graph {\n";
@@ -118,6 +100,6 @@ struct SimpleDumper {
   }
 };
 
-} // namespace clavca
+} // namespace ficavca
 
 } // namespace graphs

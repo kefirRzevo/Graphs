@@ -10,12 +10,11 @@ std::optional<Config> readConfig(int argc, const char *argv[]) {
   namespace po = boost::program_options;
   po::options_description GenericOpts("Generic options");
   GenericOpts.add_options()("help,h", "help message");
-  auto DefaultInput = std::string{"graph.txt"};
   po::options_description ConfigOpts("Configuration");
-  ConfigOpts.add_options()("a", po::value<double>(), "a param")(
-      "b", po::value<double>(), "b param")("e", po::value<double>(), "e param")(
-      "s", po::value<unsigned int>(), "seed")(
-      "i", po::value<std::string>()->default_value(DefaultInput), "input graph");
+  ConfigOpts.add_options()("a-param,a", po::value<double>(), "a param")(
+      "b-param,b", po::value<double>(), "b param")("e-param,e", po::value<double>(), "e param")(
+      "seed,s", po::value<unsigned int>(), "seed")(
+      "input,i", po::value<std::string>(), "input graph");
   auto Opts = po::options_description{};
   Opts.add(ConfigOpts).add(GenericOpts);
   Config Cfg;
@@ -28,23 +27,22 @@ std::optional<Config> readConfig(int argc, const char *argv[]) {
       std::cout << Opts << std::endl;
       return {};
     }
-    if (VM.count("a")) {
-      Cfg.ParamA.emplace(VM["a"].as<double>());
+    if (VM.count("a-param")) {
+      Cfg.ParamA.emplace(VM["a-param"].as<double>());
     }
-    if (VM.count("b")) {
-      Cfg.ParamB.emplace(VM["b"].as<double>());
+    if (VM.count("b-param")) {
+      Cfg.ParamB.emplace(VM["b-param"].as<double>());
     }
-    if (VM.count("e")) {
-      Cfg.ParamE.emplace(VM["e"].as<double>());
+    if (VM.count("e-param")) {
+      Cfg.ParamE.emplace(VM["e-param"].as<double>());
     }
-    if (VM.count("s")) {
-      Cfg.Seed.emplace(VM["s"].as<unsigned int>());
+    if (VM.count("seed")) {
+      Cfg.Seed.emplace(VM["seed"].as<unsigned int>());
     }
-    Cfg.GraphInput = DefaultInput;
-    if (VM.count("i")) {
-      Cfg.GraphInput = VM["i"].as<std::string>();
+    if (VM.count("input")) {
+      Cfg.GraphInput = VM["input"].as<std::string>();
     }
-  } catch (const po::required_option &e) {
+  } catch (...) {
     std::cout << Opts << std::endl;
     return {};
   }
