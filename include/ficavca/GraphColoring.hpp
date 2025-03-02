@@ -24,14 +24,14 @@ private:
   void initialize() {
     auto NIds = G.nodeIds();
     assert(NIds.begin() != NIds.end());
-    for (auto NId : NIds) {
+    std::transform(NIds.begin(), NIds.end(), std::back_inserter(UncoloredVerteces), [&](auto&& NId) {
       auto &V = G.getNodeAttrs(NId);
       V.Color = SizeTy{};
       V.Colored = false;
       V.PurityValue = FloatTy{1};
       V.VoteWeight = SizeTy{};
-      UncoloredVerteces.emplace_back(NId);
-    }
+      return NId;
+    });
     ColorDegree = SizeTy{1};
   }
 
@@ -52,8 +52,8 @@ private:
         auto AdjNId = G.getEdgeOtherNodeId(EId, NId);
         auto AdjEIds = G.adjEdgeIds(AdjNId);
         auto &AdjV = G.getNodeAttrs(AdjNId);
-        if (!AdjV.Colored && (AdjV.PurityValue > V.PurityValue ||
-            AdjEIds.size() >= EIds.size())) {
+        if (!AdjV.Colored && (AdjV.PurityValue >= V.PurityValue &&
+            AdjEIds.size() > EIds.size())) {
           AdjV.VoteWeight += EIds.size();
           HasSuperior = true;
         }
@@ -167,6 +167,17 @@ public:
       }
     }
     std::cout << "Color degree " << ColorDegree << std::endl;
+  }
+
+  bool validate() const {
+    auto EIds = G.edgeIds();
+    return std::all_of(EIds.begin(), EIds.end(), [&](auto&& EId) {
+      auto N1Id = G.getEdgeNode1Id(EId);
+      auto N2Id = G.getEdgeNode2Id(EId);
+      const auto& V1 = G.getNodeAttrs(N1Id);
+      const auto& V2 = G.getNodeAttrs(N2Id);
+      return V1.Colored && V2.Colored && V1.Color != V2.Color;
+    });
   }
 };
 

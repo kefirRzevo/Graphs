@@ -137,8 +137,14 @@ private:
     return Nodes[NId];
   }
 
-  EdgeEntry &getEdge(EdgeId EId) { return Edges[EId]; }
-  const EdgeEntry &getEdge(EdgeId EId) const { return Edges[EId]; }
+  EdgeEntry &getEdge(EdgeId EId) {
+    assert(EId < Edges.size() && "Out of bound EdgeId");
+    return Edges[EId];
+  }
+  const EdgeEntry &getEdge(EdgeId EId) const {
+    assert(EId < Edges.size() && "Out of bound EdgeId");
+    return Edges[EId];
+  }
 
   NodeId addConstructedNode(NodeEntry N) {
     NodeId NId = 0;
@@ -212,6 +218,12 @@ public:
 
   class EdgeItr {
   public:
+    using iterator_category = std::forward_iterator_tag;
+    using value_type = EdgeId;
+    using difference_type = int;
+    using pointer = EdgeId *;
+    using reference = EdgeId &;
+
     EdgeItr(EdgeId CurEId, const Graph &G)
         : CurEId(CurEId), EndEId(G.Edges.size()), FreeEdgeIds(G.FreeEdgeIds) {
       this->CurEId = findNextInUse(CurEId);
@@ -265,7 +277,7 @@ public:
 
     bool empty() const { return G.Edges.empty(); }
 
-    typename NodeVector::size_type size() const {
+    typename EdgeVector::size_type size() const {
       assert(G.Edges.size() >= G.FreeEdgeIds.size());
       return G.Edges.size() - G.FreeEdgeIds.size();
     }
@@ -345,15 +357,20 @@ public:
     if (E.getN1Id() == NId) {
       return E.getN2Id();
     }
-    assert(E.getN2Id() == NId);
-    return E.getN1Id();
+    if (E.getN2Id() == NId) {
+      return E.getN1Id();
+    }
+    assert(0 && "Invalid other Node Id");
+    return BaseGraph::invalidNodeId();
   }
 
   EdgeId findEdge(NodeId N1Id, NodeId N2Id) const {
-    for (auto &&AEId : adjEdgeIds(N1Id)) {
-      if ((getEdgeNode1Id(AEId) == N2Id) || (getEdgeNode2Id(AEId) == N2Id)) {
-        return AEId;
-      }
+    auto AdjEIds = adjEdgeIds(N1Id);
+    auto Found = std::find_if(AdjEIds.begin(), AdjEIds.end(), [&](auto&& AdjEId) {
+      return (getEdgeNode1Id(AdjEId) == N2Id) || (getEdgeNode2Id(AdjEId) == N2Id);
+    });
+    if (Found != AdjEIds.end()) {
+      return *Found;
     }
     return BaseGraph::invalidEdgeId();
   }
