@@ -17,6 +17,11 @@ add_executable (Ficavca ${FicavcaSources})
 target_include_directories (Ficavca PRIVATE include)
 target_link_libraries (Ficavca ${Boost_PROGRAM_OPTIONS_LIBRARY})
 
+set (GeneratorSources src/GeneratorTest.cpp)
+add_executable (Generator ${GeneratorSources})
+target_include_directories (Generator PRIVATE include)
+target_link_libraries (Generator ${Boost_PROGRAM_OPTIONS_LIBRARY})
+
 enable_testing ()
 
 set (GraphTestSources tests/GraphTest.cpp)

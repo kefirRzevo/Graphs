@@ -48,32 +48,25 @@ private:
       }
       auto EIds = G.adjEdgeIds(NId);
       auto HasSuperior = false;
+      bool PurityCompare = false;
       std::for_each(EIds.begin(), EIds.end(), [&](auto &&EId) {
         auto AdjNId = G.getEdgeOtherNodeId(EId, NId);
         auto AdjEIds = G.adjEdgeIds(AdjNId);
         auto &AdjV = G.getNodeAttrs(AdjNId);
-        if (!AdjV.Colored && (AdjV.PurityValue >= V.PurityValue &&
-            AdjEIds.size() > EIds.size())) {
+        if (Democracy) {
+          PurityCompare = AdjV.PurityValue >= V.PurityValue;
+        } else {
+          PurityCompare = AdjV.PurityValue > V.PurityValue;
+        }
+        if (!AdjV.Colored && (PurityCompare && AdjEIds.size() > EIds.size())) {
           AdjV.VoteWeight += EIds.size();
           HasSuperior = true;
         }
+
       });
       if (!HasSuperior) {
         NominateList.emplace_back(NId);
       }
-
-      // for (auto EId : EIds) {
-      //   auto AdjNId = G.getEdgeOtherNodeId(EId, NId);
-      //   auto AdjEIds = G.adjEdgeIds(AdjNId);
-      //   auto &AdjV = G.getNodeAttrs(AdjNId);
-      //   if (AdjV.PurityValue >= V.PurityValue &&
-      //       AdjEIds.size() >= EIds.size()) {
-      //     AdjV.VoteWeight += EIds.size();
-      //   } else {
-      //     std::cout << "NId " << NId << " and " << " AdjNId " << AdjNId <<
-      //     std::endl; NominateList.emplace(NId);
-      //   }
-      // }
     }
   }
 
@@ -151,11 +144,15 @@ private:
   std::vector<NodeId> NominateList;
   std::list<NodeId> UncoloredVerteces;
   SizeTy ColorDegree;
+  bool Democracy = false;
 
 public:
   Solver(GraphTy &G) : G(G) {}
 
-  template <typename DumperTy> void solve(DumperTy &Dumper) {
+  void setDemocracy(bool D) { Democracy = D; }
+
+  template <typename DumperTy> SizeTy solve(DumperTy &Dumper) {
+    if (G.empty()) { return SizeTy{1}; }
     initialize();
     for (auto Stage = SizeTy{};; ++Stage) {
       vote();
@@ -166,7 +163,7 @@ public:
         break;
       }
     }
-    std::cout << "Color degree " << ColorDegree << std::endl;
+    return ColorDegree;
   }
 
   bool validate() const {

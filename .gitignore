@@ -3,3 +3,4 @@ build/
 include/KGraph.hh
 res/*
 average_stages.txt
+results.txt

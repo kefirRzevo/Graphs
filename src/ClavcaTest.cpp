@@ -1,6 +1,6 @@
+#include "Utils.hpp"
 #include "clavca/GraphColoring.hpp"
 #include "clavca/Options.hpp"
-#include "Utils.hpp"
 
 auto RepoPath = fs::path{__FILE__}.parent_path().parent_path();
 

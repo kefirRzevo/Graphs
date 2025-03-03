@@ -12,8 +12,9 @@ std::optional<Config> readConfig(int argc, const char *argv[]) {
   GenericOpts.add_options()("help,h", "help message");
   po::options_description ConfigOpts("Configuration");
   ConfigOpts.add_options()("a-param,a", po::value<double>(), "a param")(
-      "b-param,b", po::value<double>(), "b param")("e-param,e", po::value<double>(), "e param")(
-      "seed,s", po::value<unsigned int>(), "seed")(
+      "b-param,b", po::value<double>(),
+      "b param")("e-param,e", po::value<double>(),
+                 "e param")("seed,s", po::value<unsigned int>(), "seed")(
       "input,i", po::value<std::string>(), "input graph");
   auto Opts = po::options_description{};
   Opts.add(ConfigOpts).add(GenericOpts);

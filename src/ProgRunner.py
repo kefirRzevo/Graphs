@@ -14,7 +14,7 @@ def extract_data_to_compare(file_path):
 def run_executable(input_file):
     try:
         result = subprocess.run(
-            ['build/Ficavca', input_file],
+            ["build/Ficavca", "-d", "-i", f"{input_file}"],
             capture_output=True,
             text=True,
             check=True
@@ -41,11 +41,10 @@ def main():
         
         # Run the executable and capture the output
         output = run_executable(input_file)
-        
         if output is not None:
-            match = re.search(r'Color degree (\d+)', output)
+            match = re.match(r"Nodes count (\d+)\nColor degree (\d+)", output)
             if match:
-                data = int(match.group(1))
+                data = int(match.group(2))
                 # Store the results in a dictionary
                 results.append({'stage': stage, 'data': data, 'data_to_compare': data_to_compare})
 
