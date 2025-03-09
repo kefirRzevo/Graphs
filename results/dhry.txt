@@ -1,0 +1,62 @@
+dhry_1.ll
+/home/timur/timur/mygithub/llvm-project/benchmark-dhrystone/dhry_1.ll.main.txt
+pbqp: 22
+basic: 23
+greedy: 21
+myregalloc: 25
+/home/timur/timur/mygithub/llvm-project/benchmark-dhrystone/dhry_1.ll.Proc_1.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 5
+/home/timur/timur/mygithub/llvm-project/benchmark-dhrystone/dhry_1.ll.Proc_2.txt
+pbqp: 4
+basic: 4
+greedy: 3
+myregalloc: 3
+/home/timur/timur/mygithub/llvm-project/benchmark-dhrystone/dhry_1.ll.Proc_3.txt
+pbqp: 4
+basic: 4
+greedy: 3
+myregalloc: 3
+/home/timur/timur/mygithub/llvm-project/benchmark-dhrystone/dhry_1.ll.Proc_4.txt
+pbqp: 3
+basic: 3
+greedy: 3
+myregalloc: 3
+/home/timur/timur/mygithub/llvm-project/benchmark-dhrystone/dhry_1.ll.Proc_5.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+dhry_2.ll
+/home/timur/timur/mygithub/llvm-project/benchmark-dhrystone/dhry_2.ll.Proc_6.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 4
+/home/timur/timur/mygithub/llvm-project/benchmark-dhrystone/dhry_2.ll.Proc_7.txt
+pbqp: 3
+basic: 3
+greedy: 3
+myregalloc: 3
+/home/timur/timur/mygithub/llvm-project/benchmark-dhrystone/dhry_2.ll.Proc_8.txt
+pbqp: 10
+basic: 10
+greedy: 10
+myregalloc: 8
+/home/timur/timur/mygithub/llvm-project/benchmark-dhrystone/dhry_2.ll.Func_1.txt
+pbqp: 3
+basic: 3
+greedy: 2
+myregalloc: 2
+/home/timur/timur/mygithub/llvm-project/benchmark-dhrystone/dhry_2.ll.Func_2.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 4
+/home/timur/timur/mygithub/llvm-project/benchmark-dhrystone/dhry_2.ll.Func_3.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1

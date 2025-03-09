@@ -1,0 +1,196 @@
+core_list_join.ll
+/home/timur/timur/mygithub/llvm-project/coremark/core_list_join.ll.calc_func.txt
+pbqp: 10
+basic: 10
+greedy: 10
+myregalloc: 9
+/home/timur/timur/mygithub/llvm-project/coremark/core_list_join.ll.cmp_complex.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 3
+/home/timur/timur/mygithub/llvm-project/coremark/core_list_join.ll.cmp_idx.txt
+pbqp: 4
+basic: 4
+greedy: 3
+myregalloc: 3
+/home/timur/timur/mygithub/llvm-project/coremark/core_list_join.ll.copy_info.txt
+pbqp: 4
+basic: 3
+greedy: 3
+myregalloc: 3
+/home/timur/timur/mygithub/llvm-project/coremark/core_list_join.ll.core_bench_list.txt
+pbqp: 26
+basic: 26
+greedy: 25
+myregalloc: 18
+/home/timur/timur/mygithub/llvm-project/coremark/core_list_join.ll.core_list_find.txt
+pbqp: 3
+basic: 4
+greedy: 3
+myregalloc: 3
+/home/timur/timur/mygithub/llvm-project/coremark/core_list_join.ll.core_list_reverse.txt
+pbqp: 3
+basic: 3
+greedy: 3
+myregalloc: 3
+/home/timur/timur/mygithub/llvm-project/coremark/core_list_join.ll.core_list_mergesort.txt
+pbqp: 15
+basic: 15
+greedy: 15
+myregalloc: 16
+/home/timur/timur/mygithub/llvm-project/coremark/core_list_join.ll.core_list_remove.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 5
+/home/timur/timur/mygithub/llvm-project/coremark/core_list_join.ll.core_list_undo_remove.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 5
+/home/timur/timur/mygithub/llvm-project/coremark/core_list_join.ll.core_list_init.txt
+pbqp: 18
+basic: 18
+greedy: 17
+myregalloc: 15
+/home/timur/timur/mygithub/llvm-project/coremark/core_list_join.ll.core_list_insert_new.txt
+pbqp: 9
+basic: 9
+greedy: 8
+myregalloc: 8
+core_main.ll
+/home/timur/timur/mygithub/llvm-project/coremark/core_main.ll.iterate.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 4
+/home/timur/timur/mygithub/llvm-project/coremark/core_main.ll.main.txt
+pbqp: 21
+basic: 21
+greedy: 19
+myregalloc: 19
+core_matrix.ll
+/home/timur/timur/mygithub/llvm-project/coremark/core_matrix.ll.core_bench_matrix.txt
+pbqp: 6
+basic: 7
+greedy: 7
+myregalloc: 6
+/home/timur/timur/mygithub/llvm-project/coremark/core_matrix.ll.matrix_test.txt
+pbqp: 21
+basic: 22
+greedy: 20
+myregalloc: 20
+/home/timur/timur/mygithub/llvm-project/coremark/core_matrix.ll.matrix_add_const.txt
+pbqp: 10
+basic: 10
+greedy: 10
+myregalloc: 10
+/home/timur/timur/mygithub/llvm-project/coremark/core_matrix.ll.matrix_mul_const.txt
+pbqp: 12
+basic: 12
+greedy: 12
+myregalloc: 11
+/home/timur/timur/mygithub/llvm-project/coremark/core_matrix.ll.matrix_sum.txt
+pbqp: 13
+basic: 13
+greedy: 13
+myregalloc: 13
+/home/timur/timur/mygithub/llvm-project/coremark/core_matrix.ll.matrix_mul_vect.txt
+pbqp: 14
+basic: 14
+greedy: 14
+myregalloc: 14
+/home/timur/timur/mygithub/llvm-project/coremark/core_matrix.ll.matrix_mul_matrix.txt
+pbqp: 14
+basic: 15
+greedy: 15
+myregalloc: 17
+/home/timur/timur/mygithub/llvm-project/coremark/core_matrix.ll.matrix_mul_matrix_bitextract.txt
+pbqp: 15
+basic: 15
+greedy: 15
+myregalloc: 17
+/home/timur/timur/mygithub/llvm-project/coremark/core_matrix.ll.core_init_matrix.txt
+pbqp: 17
+basic: 17
+greedy: 16
+myregalloc: 17
+core_portme.ll
+/home/timur/timur/mygithub/llvm-project/coremark/core_portme.ll.start_time.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/mygithub/llvm-project/coremark/core_portme.ll.stop_time.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/mygithub/llvm-project/coremark/core_portme.ll.get_time.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/mygithub/llvm-project/coremark/core_portme.ll.time_in_secs.txt
+pbqp: 4
+basic: 5
+greedy: 5
+myregalloc: 2
+/home/timur/timur/mygithub/llvm-project/coremark/core_portme.ll.portable_init.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/mygithub/llvm-project/coremark/core_portme.ll.portable_fini.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+core_state.ll
+/home/timur/timur/mygithub/llvm-project/coremark/core_state.ll.core_bench_state.txt
+pbqp: 11
+basic: 11
+greedy: 11
+myregalloc: 10
+/home/timur/timur/mygithub/llvm-project/coremark/core_state.ll.core_state_transition.txt
+pbqp: 22
+basic: 23
+greedy: 22
+myregalloc: 22
+/home/timur/timur/mygithub/llvm-project/coremark/core_state.ll.core_init_state.txt
+pbqp: 15
+basic: 15
+greedy: 15
+myregalloc: 15
+core_util.ll
+/home/timur/timur/mygithub/llvm-project/coremark/core_util.ll.get_seed_32.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/mygithub/llvm-project/coremark/core_util.ll.crcu8.txt
+pbqp: 6
+basic: 7
+greedy: 5
+myregalloc: 6
+/home/timur/timur/mygithub/llvm-project/coremark/core_util.ll.crcu16.txt
+pbqp: 7
+basic: 7
+greedy: 5
+myregalloc: 6
+/home/timur/timur/mygithub/llvm-project/coremark/core_util.ll.crcu32.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 3
+/home/timur/timur/mygithub/llvm-project/coremark/core_util.ll.crc16.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/mygithub/llvm-project/coremark/core_util.ll.check_data_types.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1

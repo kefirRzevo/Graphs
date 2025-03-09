@@ -9,8 +9,8 @@ struct NoDumper {
 
   void dumpMsg(std::string_view Msg) {}
 
-  template<typename GraphTy>
+  template <typename GraphTy>
   void dumpGraphByStage(std::string_view Path, const GraphTy &G) {}
 };
 
-}
+} // namespace graphs

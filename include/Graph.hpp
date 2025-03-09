@@ -366,9 +366,11 @@ public:
 
   EdgeId findEdge(NodeId N1Id, NodeId N2Id) const {
     auto AdjEIds = adjEdgeIds(N1Id);
-    auto Found = std::find_if(AdjEIds.begin(), AdjEIds.end(), [&](auto&& AdjEId) {
-      return (getEdgeNode1Id(AdjEId) == N2Id) || (getEdgeNode2Id(AdjEId) == N2Id);
-    });
+    auto Found =
+        std::find_if(AdjEIds.begin(), AdjEIds.end(), [&](auto &&AdjEId) {
+          return (getEdgeNode1Id(AdjEId) == N2Id) ||
+                 (getEdgeNode2Id(AdjEId) == N2Id);
+        });
     if (Found != AdjEIds.end()) {
       return *Found;
     }

@@ -1,13 +1,13 @@
 #pragma once
 
-#include "Graph.hpp"
 #include "Dumper.hpp"
+#include "Graph.hpp"
 #include "clavca/Vertex.hpp"
+#include <filesystem>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
 #include <string>
-#include <filesystem>
 #include <string_view>
 
 namespace fs = std::filesystem;
@@ -17,15 +17,15 @@ namespace graphs {
 namespace clavca {
 
 struct ComplicatedDumper {
-  std::ostream& OS;
+  std::ostream &OS;
   fs::path Dir;
 
-  ComplicatedDumper(std::ostream& O, fs::path D): OS(O), Dir(D) {
+  ComplicatedDumper(std::ostream &O, fs::path D) : OS(O), Dir(D) {
     fs::remove_all(D);
     fs::create_directory(D);
   }
 
-  template<typename FloatTy>
+  template <typename FloatTy>
   void complicatedVertexDump(std::ostream &OS, const Vertex<FloatTy> &V) {
     auto dumpProbabilities = [](std::ostream &OS,
                                 const std::vector<FloatTy> &Probabilities) {
@@ -48,11 +48,9 @@ struct ComplicatedDumper {
 
   void dumpDbgMsg(std::string_view Msg) {}
 
-  void dumpMsg(std::string_view Msg) {
-    OS << Msg;
-  }
+  void dumpMsg(std::string_view Msg) { OS << Msg; }
 
-  template<typename GraphTy>
+  template <typename GraphTy>
   void dumpGraphByStage(std::string_view Path, const GraphTy &G) {
     auto OS = std::ofstream{(Dir / Path).c_str()};
     OS << "graph {\n";
@@ -74,21 +72,19 @@ struct ComplicatedDumper {
 };
 
 struct SimpleDumper {
-  std::ostream& OS;
+  std::ostream &OS;
   fs::path Dir;
 
-  SimpleDumper(std::ostream& O, fs::path D): OS(O), Dir(D) {
+  SimpleDumper(std::ostream &O, fs::path D) : OS(O), Dir(D) {
     fs::remove_all(D);
     fs::create_directory(D);
   }
 
   void dumpDbgMsg(std::string_view Msg) {}
 
-  void dumpMsg(std::string_view Msg) {
-    OS << Msg;
-  }
+  void dumpMsg(std::string_view Msg) { OS << Msg; }
 
-  template<typename FloatTy>
+  template <typename FloatTy>
   void simpleVertexDump(std::ostream &OS, const Vertex<FloatTy> &V) {
     auto AsString = std::to_string(V.SelectedColorIdx);
     auto Hash = std::hash<std::string>{}(AsString);
@@ -96,7 +92,7 @@ struct SimpleDumper {
     OS << "\"#" << std::hex << FitHash << "\"";
   }
 
-  template<typename GraphTy>
+  template <typename GraphTy>
   void dumpGraphByStage(std::string_view Path, const GraphTy &G) {
     auto OS = std::ofstream{(Dir / Path).c_str()};
     OS << "graph {\n";

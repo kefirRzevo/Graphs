@@ -15,6 +15,6 @@ struct Config final {
 
 std::optional<Config> readConfig(int argc, const char *argv[]);
 
-} // namespace clavca
+} // namespace ficavca
 
 } // namespace graphs

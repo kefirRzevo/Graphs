@@ -24,14 +24,15 @@ private:
   void initialize() {
     auto NIds = G.nodeIds();
     assert(NIds.begin() != NIds.end());
-    std::transform(NIds.begin(), NIds.end(), std::back_inserter(UncoloredVerteces), [&](auto&& NId) {
-      auto &V = G.getNodeAttrs(NId);
-      V.Color = SizeTy{};
-      V.Colored = false;
-      V.PurityValue = FloatTy{1};
-      V.VoteWeight = SizeTy{};
-      return NId;
-    });
+    std::transform(NIds.begin(), NIds.end(),
+                   std::back_inserter(UncoloredVerteces), [&](auto &&NId) {
+                     auto &V = G.getNodeAttrs(NId);
+                     V.Color = SizeTy{};
+                     V.Colored = false;
+                     V.PurityValue = FloatTy{1};
+                     V.VoteWeight = SizeTy{};
+                     return NId;
+                   });
     ColorDegree = SizeTy{1};
   }
 
@@ -62,7 +63,6 @@ private:
           AdjV.VoteWeight += EIds.size();
           HasSuperior = true;
         }
-
       });
       if (!HasSuperior) {
         NominateList.emplace_back(NId);
@@ -152,7 +152,9 @@ public:
   void setDemocracy(bool D) { Democracy = D; }
 
   template <typename DumperTy> SizeTy solve(DumperTy &Dumper) {
-    if (G.empty()) { return SizeTy{1}; }
+    if (G.empty()) {
+      return SizeTy{1};
+    }
     initialize();
     for (auto Stage = SizeTy{};; ++Stage) {
       vote();
@@ -168,11 +170,11 @@ public:
 
   bool validate() const {
     auto EIds = G.edgeIds();
-    return std::all_of(EIds.begin(), EIds.end(), [&](auto&& EId) {
+    return std::all_of(EIds.begin(), EIds.end(), [&](auto &&EId) {
       auto N1Id = G.getEdgeNode1Id(EId);
       auto N2Id = G.getEdgeNode2Id(EId);
-      const auto& V1 = G.getNodeAttrs(N1Id);
-      const auto& V2 = G.getNodeAttrs(N2Id);
+      const auto &V1 = G.getNodeAttrs(N1Id);
+      const auto &V2 = G.getNodeAttrs(N2Id);
       return V1.Colored && V2.Colored && V1.Color != V2.Color;
     });
   }

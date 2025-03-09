@@ -154,7 +154,7 @@ public:
 
   void setSeed(unsigned int S) { Seed.emplace(S); }
 
-  template <typename DumperTy = NoDumper> void solve(DumperTy& Dumper) {
+  template <typename DumperTy = NoDumper> void solve(DumperTy &Dumper) {
     auto Verteces = std::list<VertexAttrs>{};
     auto NIds = G.nodeIds();
     std::transform(NIds.begin(), NIds.end(), std::back_inserter(Verteces),
