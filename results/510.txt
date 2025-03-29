@@ -1,0 +1,1529 @@
+tria.ll
+conditional_ostream.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/conditional_ostream.ll._ZN6dealii18ConditionalOStreamC2ERSob.txt
+pbqp: 3
+basic: 3
+greedy: 3
+myregalloc: 3
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/conditional_ostream.ll._ZN6dealii18ConditionalOStream13set_conditionEb.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/conditional_ostream.ll._ZNK6dealii18ConditionalOStream9is_activeEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+fe_dgq.ll
+timer.ll
+dof_faces.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/dof_faces.ll._ZNK6dealii8internal2hp8DoFFacesILi3EE18memory_consumptionEv.txt
+pbqp: 3
+basic: 3
+greedy: 3
+myregalloc: 2
+tria_boundary.ll
+chunk_sparsity_pattern.ll
+tensor.ll
+grid_refinement.ll
+mapping_cartesian.ll
+field_discretization.ll
+matrix_lib.ll
+fe_nedelec_3d.ll
+data_out_rotation.ll
+state_discretization.ll
+precondition_block.ll
+petsc_parallel_sparse_matrix.ll
+data_postprocessor.ll
+geometry_info.ll
+petsc_precondition.ll
+petsc_vector_base.ll
+fe_values.ll
+mg_smoother.ll
+petsc_full_matrix.ll
+fe_abf.ll
+trilinos_vector_base.ll
+polynomials_abf.ll
+path_search.ll
+tensor_product_polynomials.ll
+mg_dof_accessor.ll
+fe_collection.ll
+grid_tools.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools8diameterILi3ELi3EEEdRKNS_13TriangulationIXT_EXT0_EEE.txt
+pbqp: 31
+basic: 31
+greedy: 29
+myregalloc: 28
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll.__clang_call_terminate.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools22delete_unused_verticesILi3ELi3EEEvRSt6vectorINS_5PointIXT0_EEESaIS4_EERS2_INS_8CellDataIXT_EEESaIS9_EERNS_11SubCellDataE.txt
+pbqp: 20
+basic: 20
+greedy: 19
+myregalloc: 19
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt6vectorIN6dealii5PointILi3EEESaIS2_EE9push_backERKS2_.txt
+pbqp: 13
+basic: 13
+greedy: 13
+myregalloc: 10
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools26delete_duplicated_verticesILi3ELi3EEEvRSt6vectorINS_5PointIXT0_EEESaIS4_EERS2_INS_8CellDataIXT_EEESaIS9_EERNS_11SubCellDataERS2_IjSaIjEEd.txt
+pbqp: 21
+basic: 21
+greedy: 19
+myregalloc: 17
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt6vectorIjSaIjEEaSERKS1_.txt
+pbqp: 9
+basic: 9
+greedy: 9
+myregalloc: 8
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools5shiftILi3ELi3EEEvRKNS_5PointIXT0_EEERNS_13TriangulationIXT_EXT0_EEE.txt
+pbqp: 33
+basic: 34
+greedy: 29
+myregalloc: 28
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools5scaleILi3ELi3EEEvdRNS_13TriangulationIXT_EXT0_EEE.txt
+pbqp: 31
+basic: 32
+greedy: 27
+myregalloc: 26
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools29find_active_cell_around_pointILi3ELi3EEESt4pairINS_2hp10DoFHandlerIXT_EXT0_EE20active_cell_iteratorENS_5PointIXT0_EEEERKNS3_17MappingCollectionIXT_EXT0_EEERKS5_RKS8_.txt
+pbqp: 20
+basic: 20
+greedy: 20
+myregalloc: 18
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools19find_closest_vertexILi3ENS_2hp10DoFHandlerELi3EEEjRKT0_IXT_EXT1_EERKNS_5PointIXT1_EEE.txt
+pbqp: 21
+basic: 21
+greedy: 20
+myregalloc: 15
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools29find_cells_adjacent_to_vertexILi3ENS_2hp10DoFHandlerELi3EEESt6vectorINT0_IXT_EXT1_EE20active_cell_iteratorESaIS7_EERKS6_j.txt
+pbqp: 20
+basic: 22
+greedy: 19
+myregalloc: 29
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools30get_face_connectivity_of_cellsILi3ELi3EEEvRKNS_13TriangulationIXT_EXT0_EEERNS_15SparsityPatternE.txt
+pbqp: 16
+basic: 16
+greedy: 16
+myregalloc: 16
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools23partition_triangulationILi3ELi3EEEvjRNS_13TriangulationIXT_EXT0_EEE.txt
+pbqp: 12
+basic: 12
+greedy: 11
+myregalloc: 11
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools23partition_triangulationILi3ELi3EEEvjRKNS_15SparsityPatternERNS_13TriangulationIXT_EXT0_EEE.txt
+pbqp: 15
+basic: 15
+greedy: 14
+myregalloc: 14
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools25get_subdomain_associationILi3ELi3EEEvRKNS_13TriangulationIXT_EXT0_EEERSt6vectorIjSaIjEE.txt
+pbqp: 14
+basic: 14
+greedy: 14
+myregalloc: 15
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools38count_cells_with_subdomain_associationILi3ELi3EEEjRKNS_13TriangulationIXT_EXT0_EEEj.txt
+pbqp: 14
+basic: 14
+greedy: 14
+myregalloc: 15
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools21minimal_cell_diameterILi3ELi3EEEdRKNS_13TriangulationIXT_EXT0_EEE.txt
+pbqp: 14
+basic: 14
+greedy: 13
+myregalloc: 12
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNK6dealii12TriaAccessorILi3ELi3ELi3EE8diameterEv.txt
+pbqp: 27
+basic: 29
+greedy: 25
+myregalloc: 18
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools21maximal_cell_diameterILi3ELi3EEEdRKNS_13TriangulationIXT_EXT0_EEE.txt
+pbqp: 14
+basic: 14
+greedy: 13
+myregalloc: 12
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools26create_union_triangulationILi3ELi3EEEvRKNS_13TriangulationIXT_EXT0_EEES5_RS3_.txt
+pbqp: 15
+basic: 15
+greedy: 15
+myregalloc: 17
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii12InterGridMapINS_13TriangulationILi3ELi3EEEED2Ev.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools19find_closest_vertexILi3ENS_13TriangulationELi3EEEjRKT0_IXT_EXT1_EERKNS_5PointIXT1_EEE.txt
+pbqp: 21
+basic: 21
+greedy: 20
+myregalloc: 15
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools29find_cells_adjacent_to_vertexILi3ENS_13TriangulationELi3EEESt6vectorINT0_IXT_EXT1_EE20active_cell_iteratorESaIS6_EERKS5_j.txt
+pbqp: 20
+basic: 22
+greedy: 20
+myregalloc: 28
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools29find_active_cell_around_pointILi3ENS_13TriangulationELi3EEENT0_IXT_EXT1_EE20active_cell_iteratorERKS4_RKNS_5PointIXT1_EEE.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools29find_active_cell_around_pointILi3ENS_13TriangulationELi3EEESt4pairINT0_IXT_EXT1_EE20active_cell_iteratorENS_5PointIXT1_EEEERKNS_7MappingIXT_EXT1_EEERKS5_RKS8_.txt
+pbqp: 17
+basic: 17
+greedy: 17
+myregalloc: 15
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools23get_finest_common_cellsINS_13TriangulationILi3ELi3EEEEENSt7__cxx114listISt4pairINT_13cell_iteratorES8_ESaIS9_EEERKS7_SD_.txt
+pbqp: 15
+basic: 16
+greedy: 16
+myregalloc: 13
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools21have_same_coarse_meshILi3ELi3EEEbRKNS_13TriangulationIXT_EXT0_EEES5_.txt
+pbqp: 25
+basic: 25
+greedy: 22
+myregalloc: 20
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools19find_closest_vertexILi3ENS_10DoFHandlerELi3EEEjRKT0_IXT_EXT1_EERKNS_5PointIXT1_EEE.txt
+pbqp: 21
+basic: 21
+greedy: 20
+myregalloc: 15
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools29find_cells_adjacent_to_vertexILi3ENS_10DoFHandlerELi3EEESt6vectorINT0_IXT_EXT1_EE20active_cell_iteratorESaIS6_EERKS5_j.txt
+pbqp: 20
+basic: 22
+greedy: 19
+myregalloc: 29
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt6vectorIN6dealii18TriaActiveIteratorINS0_15DoFCellAccessorINS0_10DoFHandlerILi3ELi3EEEEEEESaIS6_EE9push_backERKS6_.txt
+pbqp: 14
+basic: 14
+greedy: 14
+myregalloc: 13
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools29find_active_cell_around_pointILi3ENS_10DoFHandlerELi3EEENT0_IXT_EXT1_EE20active_cell_iteratorERKS4_RKNS_5PointIXT1_EEE.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools29find_active_cell_around_pointILi3ENS_10DoFHandlerELi3EEESt4pairINT0_IXT_EXT1_EE20active_cell_iteratorENS_5PointIXT1_EEEERKNS_7MappingIXT_EXT1_EEERKS5_RKS8_.txt
+pbqp: 19
+basic: 19
+greedy: 19
+myregalloc: 16
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools23get_finest_common_cellsINS_10DoFHandlerILi3ELi3EEEEENSt7__cxx114listISt4pairINT_13cell_iteratorES8_ESaIS9_EEERKS7_SD_.txt
+pbqp: 17
+basic: 18
+greedy: 17
+myregalloc: 15
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools21have_same_coarse_meshINS_10DoFHandlerILi3ELi3EEEEEbRKT_S6_.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt6vectorIN6dealii18TriaActiveIteratorINS0_15DoFCellAccessorINS0_2hp10DoFHandlerILi3ELi3EEEEEEESaIS7_EE9push_backERKS7_.txt
+pbqp: 14
+basic: 14
+greedy: 14
+myregalloc: 13
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools29find_active_cell_around_pointILi3ENS_2hp10DoFHandlerELi3EEENT0_IXT_EXT1_EE20active_cell_iteratorERKS5_RKNS_5PointIXT1_EEE.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools29find_active_cell_around_pointILi3ENS_2hp10DoFHandlerELi3EEESt4pairINT0_IXT_EXT1_EE20active_cell_iteratorENS_5PointIXT1_EEEERKNS_7MappingIXT_EXT1_EEERKS6_RKS9_.txt
+pbqp: 19
+basic: 19
+greedy: 19
+myregalloc: 16
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools23get_finest_common_cellsINS_2hp10DoFHandlerILi3ELi3EEEEENSt7__cxx114listISt4pairINT_13cell_iteratorES9_ESaISA_EEERKS8_SE_.txt
+pbqp: 17
+basic: 18
+greedy: 17
+myregalloc: 15
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools21have_same_coarse_meshINS_2hp10DoFHandlerILi3ELi3EEEEEbRKT_S7_.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools19find_closest_vertexILi3ENS_12MGDoFHandlerELi3EEEjRKT0_IXT_EXT1_EERKNS_5PointIXT1_EEE.txt
+pbqp: 21
+basic: 21
+greedy: 20
+myregalloc: 15
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools29find_cells_adjacent_to_vertexILi3ENS_12MGDoFHandlerELi3EEESt6vectorINT0_IXT_EXT1_EE20active_cell_iteratorESaIS6_EERKS5_j.txt
+pbqp: 20
+basic: 21
+greedy: 18
+myregalloc: 24
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt6vectorIN6dealii18TriaActiveIteratorINS0_17MGDoFCellAccessorILi3ELi3EEEEESaIS4_EE9push_backERKS4_.txt
+pbqp: 16
+basic: 15
+greedy: 15
+myregalloc: 14
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools29find_active_cell_around_pointILi3ENS_12MGDoFHandlerELi3EEENT0_IXT_EXT1_EE20active_cell_iteratorERKS4_RKNS_5PointIXT1_EEE.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools29find_active_cell_around_pointILi3ENS_12MGDoFHandlerELi3EEESt4pairINT0_IXT_EXT1_EE20active_cell_iteratorENS_5PointIXT1_EEEERKNS_7MappingIXT_EXT1_EEERKS5_RKS8_.txt
+pbqp: 17
+basic: 17
+greedy: 17
+myregalloc: 14
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools23get_finest_common_cellsINS_12MGDoFHandlerILi3ELi3EEEEENSt7__cxx114listISt4pairINT_13cell_iteratorES8_ESaIS9_EEERKS7_SD_.txt
+pbqp: 15
+basic: 15
+greedy: 16
+myregalloc: 15
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools21have_same_coarse_meshINS_12MGDoFHandlerILi3ELi3EEEEEbRKT_S6_.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZN6dealii9GridTools12cell_measureILi3EEEdRKSt6vectorINS_5PointIXT_EEESaIS4_EERAlsLi1ET__Kj.txt
+pbqp: 43
+basic: 43
+greedy: 43
+myregalloc: 62
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt8_Rb_treeIN6dealii18TriaActiveIteratorINS0_12CellAccessorILi3ELi3EEEEES4_St9_IdentityIS4_ESt4lessIS4_ESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 3
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt8_Rb_treeIN6dealii18TriaActiveIteratorINS0_15DoFCellAccessorINS0_10DoFHandlerILi3ELi3EEEEEEES6_St9_IdentityIS6_ESt4lessIS6_ESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 3
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt8_Rb_treeIN6dealii18TriaActiveIteratorINS0_15DoFCellAccessorINS0_2hp10DoFHandlerILi3ELi3EEEEEEES7_St9_IdentityIS7_ESt4lessIS7_ESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 3
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt8_Rb_treeIN6dealii18TriaActiveIteratorINS0_17MGDoFCellAccessorILi3ELi3EEEEES4_St9_IdentityIS4_ESt4lessIS4_ESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 3
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZSt9__find_ifISt19_Bit_const_iteratorN9__gnu_cxx5__ops16_Iter_equals_valIKbEEET_S6_S6_T0_St26random_access_iterator_tag.txt
+pbqp: 13
+basic: 12
+greedy: 12
+myregalloc: 12
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt8_Rb_treeIN6dealii18TriaActiveIteratorINS0_12CellAccessorILi3ELi3EEEEES4_St9_IdentityIS4_ESt4lessIS4_ESaIS4_EE16_M_insert_uniqueERKS4_.txt
+pbqp: 11
+basic: 11
+greedy: 11
+myregalloc: 10
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt8_Rb_treeIN6dealii18TriaActiveIteratorINS0_12CellAccessorILi3ELi3EEEEES4_St9_IdentityIS4_ESt4lessIS4_ESaIS4_EE24_M_get_insert_unique_posERKS4_.txt
+pbqp: 9
+basic: 9
+greedy: 9
+myregalloc: 8
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt8_Rb_treeIN6dealii18TriaActiveIteratorINS0_15DoFCellAccessorINS0_10DoFHandlerILi3ELi3EEEEEEES6_St9_IdentityIS6_ESt4lessIS6_ESaIS6_EE16_M_insert_uniqueERKS6_.txt
+pbqp: 11
+basic: 11
+greedy: 11
+myregalloc: 10
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt8_Rb_treeIN6dealii18TriaActiveIteratorINS0_15DoFCellAccessorINS0_10DoFHandlerILi3ELi3EEEEEEES6_St9_IdentityIS6_ESt4lessIS6_ESaIS6_EE24_M_get_insert_unique_posERKS6_.txt
+pbqp: 9
+basic: 9
+greedy: 9
+myregalloc: 8
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt8_Rb_treeIN6dealii18TriaActiveIteratorINS0_15DoFCellAccessorINS0_2hp10DoFHandlerILi3ELi3EEEEEEES7_St9_IdentityIS7_ESt4lessIS7_ESaIS7_EE16_M_insert_uniqueERKS7_.txt
+pbqp: 11
+basic: 11
+greedy: 11
+myregalloc: 10
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt8_Rb_treeIN6dealii18TriaActiveIteratorINS0_15DoFCellAccessorINS0_2hp10DoFHandlerILi3ELi3EEEEEEES7_St9_IdentityIS7_ESt4lessIS7_ESaIS7_EE24_M_get_insert_unique_posERKS7_.txt
+pbqp: 9
+basic: 9
+greedy: 9
+myregalloc: 8
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt8_Rb_treeIN6dealii18TriaActiveIteratorINS0_17MGDoFCellAccessorILi3ELi3EEEEES4_St9_IdentityIS4_ESt4lessIS4_ESaIS4_EE16_M_insert_uniqueERKS4_.txt
+pbqp: 11
+basic: 11
+greedy: 11
+myregalloc: 10
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/grid_tools.ll._ZNSt8_Rb_treeIN6dealii18TriaActiveIteratorINS0_17MGDoFCellAccessorILi3ELi3EEEEES4_St9_IdentityIS4_ESt4lessIS4_ESaIS4_EE24_M_get_insert_unique_posERKS4_.txt
+pbqp: 9
+basic: 9
+greedy: 9
+myregalloc: 8
+data_out_faces.ll
+fe_tools.ll
+lapack_full_matrix.ll
+convergence_table.ll
+petsc_vector.ll
+fe_raviart_thomas.ll
+forward.ll
+sparsity_pattern.ll
+fe_raviart_thomas_nodal.ll
+base.ll
+tria_boundary_lib.ll
+memory_consumption.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/memory_consumption.ll._ZN6dealii17MemoryConsumption18memory_consumptionERKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS7_EE.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 5
+tensor_function.ll
+grid_out.ll
+mapping_q_eulerian.ll
+parameter_handler.ll
+matrix_out.ll
+derivative_approximation.ll
+all_dimensions.ll
+trilinos_precondition_block.ll
+mapping.ll
+mapping_q.ll
+function_parser.ll
+all_dimensions.ll
+fe_q.ll
+function_lib_cutoff.ll
+fe_poly.ll
+synthetic_data.ll
+vector_view.ll
+sparse_decomposition.ll
+histogram.ll
+thread_management.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/thread_management.ll._ZN6dealii7Threads8internal15register_threadEv.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/thread_management.ll._ZN6dealii7Threads8internal17deregister_threadEv.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/thread_management.ll._ZN6dealii7Threads8internal20handle_std_exceptionERKSt9exception.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/thread_management.ll._ZN6dealii7Threads8internal24handle_unknown_exceptionEv.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/thread_management.ll._ZN6dealii7Threads18n_existing_threadsEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/thread_management.ll._ZN6dealii7Threads14this_thread_idEv.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/thread_management.ll._ZN6dealii7Threads12DummyBarrierC2EjPKcPv.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/thread_management.ll._ZN6dealii7Threads14split_intervalEjjj.txt
+pbqp: 15
+basic: 15
+greedy: 15
+myregalloc: 10
+fe_dgp.ll
+polynomials_raviart_thomas.ll
+measurements.ll
+polynomial.ll
+time_dependent.ll
+factories.ll
+forward_solver_parameters.ll
+tria_accessor.ll
+grid_transfer.ll
+block_vector.ll
+sparsity_tools.ll
+function_derivative.ll
+trilinos_solver_block.ll
+tria_levels.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_levels.ll._ZN6dealii8internal13Triangulation9TriaLevelILi3EE13reserve_spaceEjj.txt
+pbqp: 14
+basic: 12
+greedy: 12
+myregalloc: 9
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_levels.ll._ZNK6dealii8internal13Triangulation9TriaLevelILi3EE14monitor_memoryEj.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_levels.ll._ZNK6dealii8internal13Triangulation9TriaLevelILi3EE18memory_consumptionEv.txt
+pbqp: 7
+basic: 7
+greedy: 7
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_levels.ll._ZNSt6vectorIhSaIhEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPhS1_EEmRKh.txt
+pbqp: 12
+basic: 12
+greedy: 13
+myregalloc: 10
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_levels.ll._ZNSt6vectorIbSaIbEE13_M_reallocateEm.txt
+pbqp: 19
+basic: 18
+greedy: 15
+myregalloc: 14
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_levels.ll._ZNSt6vectorIbSaIbEE14_M_fill_insertESt13_Bit_iteratormb.txt
+pbqp: 23
+basic: 23
+greedy: 21
+myregalloc: 19
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_levels.ll._ZNSt6vectorIjSaIjEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPjS1_EEmRKj.txt
+pbqp: 16
+basic: 16
+greedy: 16
+myregalloc: 15
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_levels.ll._ZNSt6vectorISt4pairIiiESaIS1_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS1_S3_EEmRKS1_.txt
+pbqp: 16
+basic: 15
+greedy: 15
+myregalloc: 14
+quadrature_selector.ll
+fe_dgp_monomial.ll
+petsc_solver.ll
+all_dimensions.ll
+petsc_matrix_base.ll
+dof_objects.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/dof_objects.ll._ZNK6dealii8internal10DoFHandler10DoFObjectsILi1EE13get_dof_indexILi3ELi3EEEjRKNS_10DoFHandlerIXT_EXT0_EEEjjj.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/dof_objects.ll._ZN6dealii8internal10DoFHandler10DoFObjectsILi1EE13set_dof_indexILi3ELi3EEEvRKNS_10DoFHandlerIXT_EXT0_EEEjjjj.txt
+pbqp: 6
+basic: 6
+greedy: 6
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/dof_objects.ll._ZNK6dealii8internal10DoFHandler10DoFObjectsILi2EE13get_dof_indexILi3ELi3EEEjRKNS_10DoFHandlerIXT_EXT0_EEEjjj.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/dof_objects.ll._ZN6dealii8internal10DoFHandler10DoFObjectsILi2EE13set_dof_indexILi3ELi3EEEvRKNS_10DoFHandlerIXT_EXT0_EEEjjjj.txt
+pbqp: 6
+basic: 6
+greedy: 6
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/dof_objects.ll._ZNK6dealii8internal10DoFHandler10DoFObjectsILi3EE13get_dof_indexILi3ELi3EEEjRKNS_10DoFHandlerIXT_EXT0_EEEjjj.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/dof_objects.ll._ZN6dealii8internal10DoFHandler10DoFObjectsILi3EE13set_dof_indexILi3ELi3EEEvRKNS_10DoFHandlerIXT_EXT0_EEEjjjj.txt
+pbqp: 6
+basic: 6
+greedy: 6
+myregalloc: 5
+dof_renumbering.ll
+experiment_description.ll
+mapping_collection.ll
+solver.ll
+petsc_sparse_matrix.ll
+all_dimensions.ll
+geometry.ll
+full_matrix.ll
+petsc_parallel_block_sparse_matrix.ll
+function_lib.ll
+table_handler.ll
+mg_dof_handler.ll
+grid_in.ll
+fe_system.ll
+parsed_function.ll
+compressed_sparsity_pattern.ll
+block_sparsity_pattern.ll
+sparse_vanka.ll
+sparse_direct.ll
+all_dimensions.ll
+data_out_stack.ll
+block_matrix_array.ll
+message_log.ll
+error_estimator.ll
+log.ll
+trilinos_sparsity_pattern.ll
+data_out.ll
+tridiagonal_matrix.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZN6dealii17TridiagonalMatrixIfEC2Ejb.txt
+pbqp: 9
+basic: 9
+greedy: 9
+myregalloc: 7
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZN6dealii17TridiagonalMatrixIfE6reinitEjb.txt
+pbqp: 8
+basic: 9
+greedy: 7
+myregalloc: 6
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIfE1mEv.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIfE1nEv.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIfE8all_zeroEv.txt
+pbqp: 6
+basic: 6
+greedy: 6
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIfEclEjj.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZN6dealii17TridiagonalMatrixIfEclEjj.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIfE5vmultERNS_6VectorIfEERKS3_b.txt
+pbqp: 27
+basic: 27
+greedy: 27
+myregalloc: 27
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIfE9vmult_addERNS_6VectorIfEERKS3_.txt
+pbqp: 26
+basic: 26
+greedy: 26
+myregalloc: 26
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIfE6TvmultERNS_6VectorIfEERKS3_b.txt
+pbqp: 27
+basic: 27
+greedy: 27
+myregalloc: 27
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIfE10Tvmult_addERNS_6VectorIfEERKS3_.txt
+pbqp: 26
+basic: 26
+greedy: 26
+myregalloc: 26
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIfE21matrix_scalar_productERKNS_6VectorIfEES5_.txt
+pbqp: 39
+basic: 43
+greedy: 39
+myregalloc: 37
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIfE18matrix_norm_squareERKNS_6VectorIfEE.txt
+pbqp: 37
+basic: 39
+greedy: 37
+myregalloc: 36
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIfE10eigenvalueEj.txt
+pbqp: 3
+basic: 3
+greedy: 3
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZN6dealii17TridiagonalMatrixIdEC2Ejb.txt
+pbqp: 9
+basic: 9
+greedy: 9
+myregalloc: 7
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZN6dealii17TridiagonalMatrixIdE6reinitEjb.txt
+pbqp: 8
+basic: 9
+greedy: 7
+myregalloc: 6
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIdE1mEv.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIdE1nEv.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIdE8all_zeroEv.txt
+pbqp: 6
+basic: 6
+greedy: 6
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIdEclEjj.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZN6dealii17TridiagonalMatrixIdEclEjj.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIdE5vmultERNS_6VectorIdEERKS3_b.txt
+pbqp: 27
+basic: 27
+greedy: 27
+myregalloc: 27
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIdE9vmult_addERNS_6VectorIdEERKS3_.txt
+pbqp: 26
+basic: 26
+greedy: 26
+myregalloc: 26
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIdE6TvmultERNS_6VectorIdEERKS3_b.txt
+pbqp: 27
+basic: 27
+greedy: 27
+myregalloc: 27
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIdE10Tvmult_addERNS_6VectorIdEERKS3_.txt
+pbqp: 26
+basic: 26
+greedy: 26
+myregalloc: 26
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIdE21matrix_scalar_productERKNS_6VectorIdEES5_.txt
+pbqp: 39
+basic: 43
+greedy: 39
+myregalloc: 37
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIdE18matrix_norm_squareERKNS_6VectorIdEE.txt
+pbqp: 37
+basic: 39
+greedy: 37
+myregalloc: 36
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNK6dealii17TridiagonalMatrixIdE10eigenvalueEj.txt
+pbqp: 3
+basic: 3
+greedy: 3
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZN6dealii17TridiagonalMatrixIdE19compute_eigenvaluesEv.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNSt6vectorIfSaIfEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPfS1_EEmRKf.txt
+pbqp: 15
+basic: 15
+greedy: 14
+myregalloc: 13
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tridiagonal_matrix.ll._ZNSt6vectorIdSaIdEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPdS1_EEmRKd.txt
+pbqp: 15
+basic: 15
+greedy: 14
+myregalloc: 13
+mapping_q1.ll
+trilinos_block_vector.ll
+global_parameters.ll
+forward_solver_evaluators.ll
+evaluations.ll
+statistics.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZN9libparest17PerStepStatisticsD2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZN9libparest17PerStepStatisticsD0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZN9libparest10StatisticsD2Ev.txt
+pbqp: 7
+basic: 7
+greedy: 6
+myregalloc: 6
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZNSt7__cxx1110_List_baseINS_12basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll.__clang_call_terminate.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZN9libparest10Statistics8add_stepEPNS_17PerStepStatisticsE.txt
+pbqp: 3
+basic: 3
+greedy: 3
+myregalloc: 3
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZNK9libparest10Statistics5printERSo.txt
+pbqp: 14
+basic: 14
+greedy: 14
+myregalloc: 11
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZNK9libparest10Statistics4sizeEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZN9libparest10StatisticsixEj.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZNK9libparest10StatisticsixEj.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZN9libparest10Statistics4backEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZNK9libparest10Statistics4backEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZNSt7__cxx114listINS_12basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE18_M_assign_dispatchISt20_List_const_iteratorIS5_EEEvT_SB_St12__false_type.txt
+pbqp: 6
+basic: 6
+greedy: 6
+myregalloc: 6
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZNSt7__cxx114listINS_12basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE6insertISt20_List_const_iteratorIS5_EEEvSt14_List_iteratorIS5_ET_SD_.txt
+pbqp: 6
+basic: 6
+greedy: 6
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/statistics.ll._ZNSt7__cxx114listINS_12basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE14_M_create_nodeERKS5_.txt
+pbqp: 7
+basic: 7
+greedy: 7
+myregalloc: 7
+trilinos_precondition.ll
+mapping_q1_eulerian.ll
+utilities.ll
+sparse_matrix_ez.ll
+fe.ll
+block_sparse_matrix.ll
+trilinos_solver.ll
+constraint_matrix.ll
+auto_derivative_function.ll
+graphical_display.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/graphical_display.ll._ZN9libparest16GraphicalDisplayC2Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/graphical_display.ll._ZN9libparest16GraphicalDisplayD2Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/graphical_display.ll._ZNK9libparest16GraphicalDisplay11run_displayEv.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/graphical_display.ll._ZNK9libparest16GraphicalDisplay17put_status_stringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+intergrid_map.ll
+vector.ll
+quadrature_lib.ll
+persistent_tria.ll
+master.ll
+compressed_set_sparsity_pattern.ll
+trilinos_sparse_matrix.ll
+compressed_simple_sparsity_pattern.ll
+boundary_sources_phantom.ll
+polynomial_space.ll
+symmetric_tensor.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/symmetric_tensor.ll._ZN6dealii6invertILi3EEENS_15SymmetricTensorILi4EXT_EEERKS2_.txt
+pbqp: 44
+basic: 48
+greedy: 47
+myregalloc: 43
+boundary_sources_planarz8.ll
+petsc_parallel_vector.ll
+mg_transfer_block.ll
+targets.ll
+all_dimensions.ll
+fe_q_hierarchical.ll
+all_dimensions.ll
+subscriptor.ll
+petsc_block_sparse_matrix.ll
+precondition_block_ez.ll
+multiple_experiments.ll
+grid_generator.ll
+sparse_mic.ll
+me_parameters.ll
+mg_base.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGTransferBaseINS_6VectorIdEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGTransferBaseINS_6VectorIdEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGTransferBaseINS_6VectorIfEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGTransferBaseINS_6VectorIfEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGTransferBaseINS_11BlockVectorIdEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGTransferBaseINS_11BlockVectorIdEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGTransferBaseINS_11BlockVectorIfEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGTransferBaseINS_11BlockVectorIfEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii12MGMatrixBaseINS_6VectorIdEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii12MGMatrixBaseINS_6VectorIdEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii12MGMatrixBaseINS_6VectorIfEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii12MGMatrixBaseINS_6VectorIfEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii12MGMatrixBaseINS_11BlockVectorIdEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii12MGMatrixBaseINS_11BlockVectorIdEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii12MGMatrixBaseINS_11BlockVectorIfEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii12MGMatrixBaseINS_11BlockVectorIfEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGSmootherBaseINS_6VectorIfEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGSmootherBaseINS_6VectorIfEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGSmootherBaseINS_6VectorIdEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGSmootherBaseINS_6VectorIdEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGSmootherBaseINS_11BlockVectorIfEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGSmootherBaseINS_11BlockVectorIfEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGSmootherBaseINS_11BlockVectorIdEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii14MGSmootherBaseINS_11BlockVectorIdEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii16MGCoarseGridBaseINS_6VectorIdEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii16MGCoarseGridBaseINS_6VectorIdEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii16MGCoarseGridBaseINS_6VectorIfEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii16MGCoarseGridBaseINS_6VectorIfEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii16MGCoarseGridBaseINS_11BlockVectorIdEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii16MGCoarseGridBaseINS_11BlockVectorIdEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii16MGCoarseGridBaseINS_11BlockVectorIfEEED2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/mg_base.ll._ZN6dealii16MGCoarseGridBaseINS_11BlockVectorIfEEED0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+sparse_matrix.ll
+dof_tools.ll
+mapping_c1.ll
+fe_field_function.ll
+trilinos_block_sparse_matrix.ll
+fe_nedelec_2d.ll
+mg_dof_tools.ll
+boost_threads.ll
+grid_reordering.ll
+tools.ll
+control.ll
+mg_transfer_prebuilt.ll
+fe_nedelec_1d.ll
+trilinos_vector.ll
+swappable_vector.ll
+tria_faces.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_faces.ll._ZNK6dealii8internal13Triangulation9TriaFacesILi3EE18memory_consumptionEv.txt
+pbqp: 3
+basic: 3
+greedy: 3
+myregalloc: 2
+fe_poly_tensor.ll
+matrices.ll
+tria_objects.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_objects.ll._ZN6dealii8internal13Triangulation11TriaObjectsINS1_10TriaObjectILi1EEEE21next_free_single_lineILi3ELi3EEENS_13TriangulationIXT_EXT0_EE17raw_line_iteratorERKS8_.txt
+pbqp: 10
+basic: 10
+greedy: 10
+myregalloc: 10
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_objects.ll._ZN6dealii8internal13Triangulation11TriaObjectsINS1_10TriaObjectILi1EEEE19next_free_pair_lineILi3ELi3EEENS_13TriangulationIXT_EXT0_EE17raw_line_iteratorERKS8_.txt
+pbqp: 10
+basic: 10
+greedy: 10
+myregalloc: 10
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_objects.ll._ZN6dealii8internal13Triangulation11TriaObjectsINS1_10TriaObjectILi1EEEE21next_free_single_quadILi3ELi3EEENS_13TriangulationIXT_EXT0_EE17raw_quad_iteratorERKS8_.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_objects.ll._ZN6dealii8internal13Triangulation11TriaObjectsINS1_10TriaObjectILi1EEEE19next_free_pair_quadILi3ELi3EEENS_13TriangulationIXT_EXT0_EE17raw_quad_iteratorERKS8_.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_objects.ll._ZN6dealii8internal13Triangulation11TriaObjectsINS1_10TriaObjectILi2EEEE21next_free_single_lineILi3ELi3EEENS_13TriangulationIXT_EXT0_EE17raw_line_iteratorERKS8_.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_objects.ll._ZN6dealii8internal13Triangulation11TriaObjectsINS1_10TriaObjectILi2EEEE19next_free_pair_lineILi3ELi3EEENS_13TriangulationIXT_EXT0_EE17raw_line_iteratorERKS8_.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_objects.ll._ZN6dealii8internal13Triangulation11TriaObjectsINS1_10TriaObjectILi2EEEE21next_free_single_quadILi3ELi3EEENS_13TriangulationIXT_EXT0_EE17raw_quad_iteratorERKS8_.txt
+pbqp: 10
+basic: 10
+greedy: 10
+myregalloc: 10
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_objects.ll._ZN6dealii8internal13Triangulation11TriaObjectsINS1_10TriaObjectILi2EEEE19next_free_pair_quadILi3ELi3EEENS_13TriangulationIXT_EXT0_EE17raw_quad_iteratorERKS8_.txt
+pbqp: 10
+basic: 10
+greedy: 10
+myregalloc: 10
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/tria_objects.ll._ZN6dealii8internal13Triangulation11TriaObjectsINS1_10TriaObjectILi3EEEE13next_free_hexILi3ELi3EEENS_13TriangulationIXT_EXT0_EE16raw_hex_iteratorERKS8_j.txt
+pbqp: 10
+basic: 10
+greedy: 10
+myregalloc: 10
+config.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers12NumberTraitsIdE9conjugateERKd.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers12NumberTraitsIdE10abs_squareERKd.txt
+pbqp: 2
+basic: 3
+greedy: 3
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers12NumberTraitsIdE3absERKd.txt
+pbqp: 2
+basic: 3
+greedy: 3
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers12NumberTraitsIfE9conjugateERKf.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers12NumberTraitsIfE10abs_squareERKf.txt
+pbqp: 2
+basic: 3
+greedy: 3
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers12NumberTraitsIfE3absERKf.txt
+pbqp: 2
+basic: 3
+greedy: 3
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers12NumberTraitsISt7complexIdEE9conjugateERKS3_.txt
+pbqp: 3
+basic: 4
+greedy: 4
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers12NumberTraitsISt7complexIdEE10abs_squareERKS3_.txt
+pbqp: 3
+basic: 4
+greedy: 4
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers12NumberTraitsISt7complexIdEE3absERKS3_.txt
+pbqp: 3
+basic: 3
+greedy: 3
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers12NumberTraitsISt7complexIfEE9conjugateERKS3_.txt
+pbqp: 3
+basic: 4
+greedy: 4
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers12NumberTraitsISt7complexIfEE10abs_squareERKS3_.txt
+pbqp: 3
+basic: 4
+greedy: 4
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers12NumberTraitsISt7complexIfEE3absERKS3_.txt
+pbqp: 3
+basic: 3
+greedy: 3
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers9is_finiteEd.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 3
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers9is_finiteESt7complexIdE.txt
+pbqp: 5
+basic: 6
+greedy: 6
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/config.ll._ZN6dealii7numbers9is_finiteESt7complexIfE.txt
+pbqp: 7
+basic: 7
+greedy: 7
+myregalloc: 4
+dof_handler.ll
+exceptions.ll
+function_time.ll
+sparse_ilu.ll
+all_dimensions.ll
+solution_transfer.ll
+step_length_control.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZN9libparest6Master17StepLengthControl23ResidualComputationBaseD2Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZN9libparest6Master17StepLengthControl23ResidualComputationBaseD0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZNK9libparest6Master17StepLengthControl23ResidualComputationBase22compute_trial_residualEd.txt
+pbqp: 6
+basic: 6
+greedy: 6
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZN9libparest6Master17StepLengthControl10LineSearchC2ERKNS1_23ResidualComputationBaseE.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZN9libparest6Master17StepLengthControl10LineSearch12sort_resultsEv.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 3
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZN9libparest6Master17StepLengthControl10LineSearch25compute_initial_residualsEv.txt
+pbqp: 16
+basic: 15
+greedy: 15
+myregalloc: 12
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZNK9libparest6Master17StepLengthControl10LineSearch16nearest_residualEd.txt
+pbqp: 9
+basic: 9
+greedy: 9
+myregalloc: 9
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZNK9libparest6Master17StepLengthControl10LineSearch24compute_minimum_residualEv.txt
+pbqp: 30
+basic: 31
+greedy: 29
+myregalloc: 28
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZNK9libparest6Master17StepLengthControl10LineSearch21min_computed_residualEv.txt
+pbqp: 6
+basic: 7
+greedy: 6
+myregalloc: 6
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZNK9libparest6Master17StepLengthControl10LineSearch15rightmost_alphaEv.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZNK9libparest6Master17StepLengthControl10LineSearch14leftmost_alphaEv.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZNK9libparest6Master17StepLengthControl10LineSearch8distanceEd.txt
+pbqp: 7
+basic: 9
+greedy: 7
+myregalloc: 7
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZNK9libparest6Master17StepLengthControl10LineSearch14accept_minimumERKSt4pairIddE.txt
+pbqp: 8
+basic: 10
+greedy: 8
+myregalloc: 8
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZN9libparest6Master17StepLengthControl10LineSearch19compute_step_lengthEv.txt
+pbqp: 16
+basic: 18
+greedy: 16
+myregalloc: 16
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZNK9libparest6Master17StepLengthControl10LineSearch13fixup_minimumERKSt4pairIddE.txt
+pbqp: 7
+basic: 7
+greedy: 7
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZN9libparest6Master17StepLengthControl10LineSearch26compute_new_trial_residualEv.txt
+pbqp: 17
+basic: 17
+greedy: 17
+myregalloc: 10
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZNK9libparest6Master17StepLengthControl10LineSearch22next_trial_step_lengthEv.txt
+pbqp: 8
+basic: 8
+greedy: 8
+myregalloc: 6
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZSt16__introsort_loopIN9__gnu_cxx17__normal_iteratorIPSt4pairIddESt6vectorIS3_SaIS3_EEEElNS0_5__ops15_Iter_comp_iterIN9libparest6Master17StepLengthControl21LessThanByFirstNumberEEEEvT_SG_T0_T1_.txt
+pbqp: 23
+basic: 23
+greedy: 22
+myregalloc: 16
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZSt22__final_insertion_sortIN9__gnu_cxx17__normal_iteratorIPSt4pairIddESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_comp_iterIN9libparest6Master17StepLengthControl21LessThanByFirstNumberEEEEvT_SG_T0_.txt
+pbqp: 17
+basic: 17
+greedy: 16
+myregalloc: 15
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZSt13__heap_selectIN9__gnu_cxx17__normal_iteratorIPSt4pairIddESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_comp_iterIN9libparest6Master17StepLengthControl21LessThanByFirstNumberEEEEvT_SG_SG_T0_.txt
+pbqp: 22
+basic: 22
+greedy: 22
+myregalloc: 20
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/step_length_control.ll._ZSt11__make_heapIN9__gnu_cxx17__normal_iteratorIPSt4pairIddESt6vectorIS3_SaIS3_EEEENS0_5__ops15_Iter_comp_iterIN9libparest6Master17StepLengthControl21LessThanByFirstNumberEEEEvT_SG_RT0_.txt
+pbqp: 20
+basic: 21
+greedy: 20
+myregalloc: 17
+dof_levels.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/dof_levels.ll._ZNK6dealii8internal2hp8DoFLevelILi3EE18memory_consumptionEv.txt
+pbqp: 3
+basic: 3
+greedy: 3
+myregalloc: 2
+bounds.ll
+block_sparse_matrix_ez.ll
+measurement_weights.ll
+flow_function.ll
+job_identifier.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/job_identifier.ll._ZN6dealii13JobIdentifierD2Ev.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/job_identifier.ll._ZN6dealii13JobIdentifierC2Ev.txt
+pbqp: 9
+basic: 9
+greedy: 10
+myregalloc: 7
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/job_identifier.ll._ZNK6dealii13JobIdentifierclB5cxx11Ev.txt
+pbqp: 5
+basic: 5
+greedy: 5
+myregalloc: 5
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/job_identifier.ll._GLOBAL__sub_I_job_identifier.cc.txt
+pbqp: 3
+basic: 3
+greedy: 3
+myregalloc: 3
+solver_control.ll
+fe_nedelec.ll
+data_out_base.ll
+problem_description.ll
+fe_dgp_nonparametric.ll
+me_slave.ll
+polynomials_p.ll
+coefficient.ll
+factory.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/factory.ll._ZN9libparest5Slave7FactoryD2Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/factory.ll._ZN9libparest5Slave7FactoryD0Ev.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/factory.ll._ZNK9libparest5Slave7Factory12create_slaveERKNS_15ParallelControl5Local7ControlERNS_10MessageLog10ServerBaseEjj.txt
+pbqp: 8
+basic: 8
+greedy: 7
+myregalloc: 6
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/factory.ll._ZNK9libparest5Slave7Factory24run_slave_relay_detachedERKNS_15ParallelControl5Local7ControlERNS_10MessageLog10ServerBaseEjj.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+polynomials_bdm.ll
+function.ll
+newton_method.ll
+multithread_info.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/multithread_info.ll._ZN6dealii15MultithreadInfo10get_n_cpusEv.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/multithread_info.ll._ZN6dealii15MultithreadInfoC2Ev.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/multithread_info.ll._ZN6dealii15MultithreadInfo18memory_consumptionEv.txt
+pbqp: 0
+basic: 0
+myregalloc: 1
+top_level.ll
+me_tomography.ll
+chunk_sparse_matrix.ll
+fe_data.ll
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZN6dealii17FiniteElementDataILi1EEC2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZN6dealii17FiniteElementDataILi1EEC2ERKSt6vectorIjSaIjEEjjNS1_10ConformityEj.txt
+pbqp: 8
+basic: 8
+greedy: 8
+myregalloc: 8
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi1EE17n_dofs_per_vertexEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi1EE15n_dofs_per_lineEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi1EE15n_dofs_per_quadEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi1EE14n_dofs_per_hexEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi1EE15n_dofs_per_faceEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi1EE15n_dofs_per_cellEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi1EE12n_componentsEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi1EE8n_blocksEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi1EE13tensor_degreeEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi1EE8conformsENS1_10ConformityE.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi1EE18face_to_cell_indexEjjbbb.txt
+pbqp: 12
+basic: 12
+greedy: 12
+myregalloc: 9
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi1EEeqERKS1_.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZN6dealii17FiniteElementDataILi2EEC2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZN6dealii17FiniteElementDataILi2EEC2ERKSt6vectorIjSaIjEEjjNS1_10ConformityEj.txt
+pbqp: 12
+basic: 11
+greedy: 11
+myregalloc: 11
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi2EE17n_dofs_per_vertexEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi2EE15n_dofs_per_lineEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi2EE15n_dofs_per_quadEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi2EE14n_dofs_per_hexEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi2EE15n_dofs_per_faceEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi2EE15n_dofs_per_cellEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi2EE12n_componentsEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi2EE8n_blocksEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi2EE13tensor_degreeEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi2EE8conformsENS1_10ConformityE.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi2EE18face_to_cell_indexEjjbbb.txt
+pbqp: 12
+basic: 12
+greedy: 12
+myregalloc: 9
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi2EEeqERKS1_.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 4
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZN6dealii17FiniteElementDataILi3EEC2Ev.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZN6dealii17FiniteElementDataILi3EEC2ERKSt6vectorIjSaIjEEjjNS1_10ConformityEj.txt
+pbqp: 14
+basic: 13
+greedy: 13
+myregalloc: 13
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi3EE17n_dofs_per_vertexEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi3EE15n_dofs_per_lineEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi3EE15n_dofs_per_quadEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi3EE14n_dofs_per_hexEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi3EE15n_dofs_per_faceEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi3EE15n_dofs_per_cellEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi3EE12n_componentsEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi3EE8n_blocksEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi3EE13tensor_degreeEv.txt
+pbqp: 1
+basic: 1
+greedy: 1
+myregalloc: 1
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi3EE8conformsENS1_10ConformityE.txt
+pbqp: 2
+basic: 2
+greedy: 2
+myregalloc: 2
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi3EE18face_to_cell_indexEjjbbb.txt
+pbqp: 12
+basic: 12
+greedy: 12
+myregalloc: 9
+/home/timur/timur/regalloc/build-tests/SPEC-CFP2017rate-test/External/SPEC/CFP2017rate/510.parest_r/fe_data.ll._ZNK6dealii17FiniteElementDataILi3EEeqERKS1_.txt
+pbqp: 4
+basic: 4
+greedy: 4
+myregalloc: 4
+dof_accessor.ll
+all_dimensions.ll
+mg_transfer_component.ll
+quadrature.ll
+all_dimensions.ll
+petsc_parallel_block_vector.ll
+vector_memory.ll
