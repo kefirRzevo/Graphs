@@ -13,6 +13,7 @@ template <typename FloatTy> struct Vertex final {
   SizeType DynamicThreshold;
   SizeType SelectedColorIdx;
   bool Rewarded;
+  std::string Label;
 };
 
 } // namespace clavca

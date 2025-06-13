@@ -45,7 +45,8 @@ struct ComplicatedDumper {
     OS << "\tnode[shape=record, style=filled, fontcolor=black];\n";
     for (auto NId : G.nodeIds()) {
       const auto &V = G.getNodeAttrs(NId);
-      OS << "\tnode_" << NId << "[label = \"Id " << NId << "|";
+      std::string Label = V.Label == "" ? std::to_string(NId) : V.Label;
+      OS << "\tnode_" << NId << "[label = \"Id " << Label << "|";
       complicatedVertexDump(OS, V);
       OS << "Neighbors " << G.adjEdgeIds(NId).size() << "\"];\n";
     }

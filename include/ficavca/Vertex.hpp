@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cstddef>
+#include <string>
 
 namespace graphs {
 
@@ -14,6 +15,7 @@ struct Vertex final {
   SizeTy Color;
   FloatTy PurityValue;
   SizeTy VoteWeight;
+  std::string Label;
 };
 
 } // namespace ficavca

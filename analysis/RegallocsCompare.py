@@ -156,11 +156,6 @@ def main():
         f"{llvm_repo_path}/benchmark-dhrystone",
         f"{repo_path}/results/dhry.txt"   
     )
-    dhry = Benchmark(
-        ["dhry_1.ll", "dhry_2.ll"],
-        f"{llvm_repo_path}/benchmark-dhrystone",
-        f"{repo_path}/results/dhry.txt"
-    )
     parest_r510 = Benchmark(
         [
             "tria.ll",

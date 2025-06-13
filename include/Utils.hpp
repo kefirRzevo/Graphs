@@ -16,6 +16,8 @@ template <typename GraphTy> inline GraphTy readGraph(std::istream &is) {
     auto Found = Verteces.find(VertexNum);
     if (Found == Verteces.end()) {
       auto V = G.addNode();
+      auto& VTy = G.getNodeAttrs(V);
+      VTy.Label = std::to_string(VertexNum);
       Verteces.emplace(VertexNum, V);
       return V;
     }
