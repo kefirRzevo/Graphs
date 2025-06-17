@@ -1,5 +1,8 @@
 # CLAVCA
-This is cellular learning automata vertex coloring algorithm. 
+This is cellular learning automata vertex coloring algorithm.
+
+# FICAVCA
+This is fuzzy irregular cellular automata vertex coloring algorithm.
 
 ## Build
 To build program:
@@ -9,3 +12,4 @@ To build program:
         cmake -S . -B build
         cmake --build build
 ```
+
